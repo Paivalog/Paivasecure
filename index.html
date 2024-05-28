@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PaivaSecure Cyber Solutions</title>
+    <title>PaivaSecure</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -11,16 +11,16 @@
     <header>
         <div class="container">
             <h1>PaivaSecure Cyber Solutions</h1>
-            <p>Empowering Businesses with Cutting-Edge Cybersecurity Solutions</p>
+            <p>Protecting Your Digital World</p>
         </div>
     </header>
     
     <nav>
         <div class="container">
             <ul>
-                <li><a href="#about">About Us</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li class="dropdown">
-                    <a href="#tools" class="dropbtn">Our Tools</a>
+                    <a href="javascript:void(0)" class="dropbtn">Our Tools</a>
                     <div class="dropdown-content">
                         <a href="pentest.html">PaivaSecure PenTest</a>
                         <a href="zerotrust.html">PaivaSecure ZeroTrust</a>
@@ -53,24 +53,11 @@
             </ul>
         </div>
     </nav>
-    
+
     <main>
-        <section id="about" class="container">
-            <h2>About Us</h2>
-            <p>PaivaSecure is a leading cybersecurity company dedicated to protecting businesses from digital threats and enhancing their security posture. Our comprehensive suite of tools offers robust solutions tailored to meet the unique needs of your organization.</p>
-        </section>
-        
-        <section id="contact" class="container">
-            <h2>Contact Us</h2>
-            <form action="mailto:info@paivasecure.com" method="post" enctype="text/plain">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                <input type="submit" value="Send">
-            </form>
+        <section class="container">
+            <h2>Welcome to PaivaSecure Cyber Solutions</h2>
+            <p>Your trusted partner in cybersecurity and digital protection.</p>
         </section>
     </main>
     
@@ -80,16 +67,6 @@
         </div>
     </footer>
 
-    <script>
-        // JavaScript for dropdown menu
-        document.addEventListener('click', function(e) {
-            const dropdown = document.querySelector('.dropdown-content');
-            if (e.target.matches('.dropbtn')) {
-                dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
-            } else {
-                dropdown.style.display = 'none';
-            }
-        });
-    </script>
+    <script src="scripts.js"></script>
 </body>
 </html>
